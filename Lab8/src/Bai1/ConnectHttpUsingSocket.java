@@ -12,7 +12,9 @@ import java.net.Socket;
  */
 //Viết ứng dụng phía Client truy xuất đến một trang web sử dụng class Socket
 public class ConnectHttpUsingSocket {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        Socket socket = new Socket("localhost",80); // tạo socket kết nối vs  localhost cổng 80
+        OutputStream os =socket.getOutputStream(); // gửi yêu cầu
         
     }
 }
